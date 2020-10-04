@@ -1,36 +1,36 @@
 body{
-	background-image: url(backgriund.jpg);
-	
-}
-#school-name{
-	background-color: #434b70;
-	
+	background-image: url(img/background.jpg);
 }
 
+#school-name{
+	background-color: #434b70;
+}
 
 .nav-area {
     padding-top: 20px;
     padding-left:100px;
     background: #239dd0;
 }
+
 .container{
     background-color:whitesmoke;
     padding-top:20px;
     padding-left:30px;
 }
+
 .container-fluid{
     background-color:#434b70;
         padding-top:10px;
     padding-left:25px;
 }
+
 ul ul{
       position: absolute;
       display: none;
-     justify-content: left;
+			justify-content: left;
+  }
 
-  } 
-  ul ul li{
-      
+ul ul li{
       min-width: 200px;
       display: block;
       color: red;
@@ -43,17 +43,18 @@ ul ul{
       border-radius: 5px;
       padding-left: 7px;
   }
-  ul li:hover ul{
-      display: block; 
+
+ul li:hover ul{
+      display: block;
       text-decoration: none;
-      
-  } 
-  ul ul li a:hover {
+  }
+
+ul ul li a:hover {
       text-decoration: none;
       color:white;
       background-color: #434b70;
       width: 100%;
-      box-sizing:border-box;    
+      box-sizing:border-box;
       padding-left: 10px;
   }
 
@@ -61,12 +62,14 @@ ul ul li a.ho:hover {
     color: white;
     background-color: white;
     box-sizing:border-box;
-     border: 1px solid white;
-     padding-left: 10px;
+    border: 1px solid white;
+   	padding-left: 10px;
 }
+
 .drop{
     color: aqu;
 }
+
 .navbar{
     position: fixed;
     z-index: 1;
@@ -76,5 +79,4 @@ ul ul li a.ho:hover {
     align-items: center;
     height: auto;
     padding-left: 10px;
-}
 }
