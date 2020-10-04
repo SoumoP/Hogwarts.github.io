@@ -1,133 +1,114 @@
  <!DOCTYPE html>
- <html>
+ <html lang="en">
   <head>
    	<title>Hogwarts</title>
    	<meta charset="utf-8">
    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The story of Hogwarts">
    	<link rel="stylesheet" type="text/css" href="style.css">
    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
   <!--Marquee-->
-  	<marquee behaviour="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" id="top-notice">
+  	<marquee behaviour="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="color: blue">
       Due to COVID - 19 Pandemic, our school is closed. We are all working from our respective homes and all our services are available online.
       Write a letter to us for anything and everything. Stay at home, and Stay safe.
     </marquee>
 
-   	<!-- Top Bar -->
-   	<nav class="nav navbar navbar-expand-sm py-0  navbar-dark bg-dark">
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-              <a class="nav-link" href="#">This page is exclusively visible to Witches and Wizards</a>
-          </li>
-      </ul>
-    	<ul class="navbar-nav">
-      	<li class="nav-item">
-        		<a class="nav-link" href="#">Contact</a>
-      	</li>
-      	<li class="nav-item">
-        		<a class="nav-link" href="#">Map</a>
-      	</li>
-      	<li class="nav-item">
-        		<a class="nav-link" href="#">Admission</a>
-      	</li>
-    	</ul>
-  	</nav>
-
   	<!-- Header -->
-  	<div class="container-fluid" id="school-name">
+  	<div class="container-fluid text-center" id="school-name">
   		<label>
-        <img src="img/hogwarts.jpg" class="img-responsive" alt="hogwarts-logo" >
+        <img src="img/hogwarts.png" class="img-responsive" alt="hogwarts-logo">
       </label>
       <label>
-  			<h1 class="text-center text-capitalize text-primary font-weight-bold ">Hogwarts School of Witchcraft and Wizadry</h1>
+  			<h1 class="text-capitalize text-primary font-weight-bold ">Hogwarts School of Witchcraft and Wizadry</h1>
   		</label>
   		<label>
-        <img src="img/Wiz.png" class="img-responsive" alt="Wiz-World-logo" >
+        <img src="img/hogwarts.png" class="img-responsive" alt="hogwarts-logo">
       </label>
   	</div>
 
   	<!--DropDown Menu Section-->
-    <div>
-      <div class="homebar">
-        <nav class="navbar navbar-expand-sm bg-dark ">
-          <ul style="list-style-type: none;" class="navbar-nav ">
-            <li class="nav-item ">
-              <a class="nav-link text-primary" href="#"><b>HOME</b></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-primary" id="au" href="#"><b>OUR HISTORY</b></a>
-              <ul class="drip">
-                <li><a href="#" class="drop">The Founders</a></li>
-                <li><a href="#" class="drop">The Battles</a></li>
-                <li><a href="#" class="drop">Voldemort Era</a></li>
-                <li><a href="#" class="drop">Harry Potter Era</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary infra" href="#"><b>THE CASTLE</b></a>
-              <ul>
-                <li><a href="#" class="drop">Dormitories</a></li>
-                <li><a href="#" class="drop">Library</a></li>
-                <li><a href="#" class="drop">Classrooms</a></li>
-                <li><a href="#" class="drop">The Great Hall</a></li>
-                <li><a href="#" class="drop">Hospital Wing</a></li>
-                <li><a href="#" class="drop">Quidditch Field</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary acad" href="#"><b>THE HOGWARTS EXPRESS</b></a>
-              <ul>
-                <li><a href="#" class="drop">Timings</a></li>
-                <li><a href="#" class="drop">Tickets</a></li>
-                <li><a href="#" class="drop">Stations</a></li>
-                <li><a href="#" class="drop">Facilities</a></li>
-             </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary cocurri" href="#"><b>SUBJECTS</b></a>
-              <ul>
-                 <li><a href="#" class="drop">Charms</a></li>
-                 <li><a href="#" class="drop">Potions</a></li>
-                 <li><a href="#" class="drop">History of Magic</a></li>
-                 <li><a href="#" class="drop">Defense againts the Dark Arts</a></li>
-                 <li><a href="#" class="drop">Herbology</a></li>
-                 <li><a href="#" class="drop">Others...</a></li>
-               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary admi" href="#"><b>FACULTIES</b></a>
-              <ul>
-                <li><a href="#" class="drop">General</a></li>
-                <li><a href="#" class="drop">Lodging</a></li>
-                <li><a href="#" class="drop">Food</a></li>
-                <li><a href="#" class="drop">Safety</a></li>
-               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary news" href="#"><b>EVENTS</b></a>
-              <ul>
-                <li><a href="#" class="drop">Quidditch Tournament</a></li>
-                <li><a href="#" class="drop">Potions Contest</a></li>
-                <li><a href="#" class="drop">Inter House Quiz</a></li>
-                <li><a href="#" class="drop">Others...</a></li>
+    <div class="homebar">
+      <nav class="navbar navbar-expand-sm bg-dark">
+        <ul style="list-style-type: none;" class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#"><b>HOME</b></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-primary" id="au" href="#"><b>OUR HISTORY</b></a>
+            <ul class="drip">
+              <li><a href="#" class="drop">The Founders</a></li>
+              <li><a href="#" class="drop">The Battles</a></li>
+              <li><a href="#" class="drop">Voldemort Era</a></li>
+              <li><a href="#" class="drop">Harry Potter Era</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary infra" href="#"><b>THE CASTLE</b></a>
+            <ul>
+              <li><a href="#" class="drop">Dormitories</a></li>
+              <li><a href="#" class="drop">Library</a></li>
+              <li><a href="#" class="drop">Classrooms</a></li>
+              <li><a href="#" class="drop">The Great Hall</a></li>
+              <li><a href="#" class="drop">Hospital Wing</a></li>
+              <li><a href="#" class="drop">Quidditch Field</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary acad" href="#"><b>THE HOGWARTS EXPRESS</b></a>
+            <ul>
+              <li><a href="#" class="drop">Timings</a></li>
+              <li><a href="#" class="drop">Tickets</a></li>
+              <li><a href="#" class="drop">Stations</a></li>
+              <li><a href="#" class="drop">Facilities</a></li>
            </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary parent" href="#"><b>RULES</b></a>
-              <ul>
-                <li><a href="#" class="drop">General</a></li>
-                <li><a href="#" class="drop">Dormitory Rules</a></li>
-                <li><a href="#" class="drop">Library Rules</a></li>
-                <li><a href="#" class="drop">Classroom Rules</a></li>
-                <li><a href="#" class="drop">Dress Code</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary cocurri" href="#"><b>SUBJECTS</b></a>
+            <ul>
+               <li><a href="#" class="drop">Charms</a></li>
+               <li><a href="#" class="drop">Potions</a></li>
+               <li><a href="#" class="drop">History of Magic</a></li>
+               <li><a href="#" class="drop">Defense againts the Dark Arts</a></li>
+               <li><a href="#" class="drop">Herbology</a></li>
+               <li><a href="#" class="drop">Others...</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary admi" href="#"><b>FACULTIES</b></a>
+            <ul>
+              <li><a href="#" class="drop">General</a></li>
+              <li><a href="#" class="drop">Lodging</a></li>
+              <li><a href="#" class="drop">Food</a></li>
+              <li><a href="#" class="drop">Safety</a></li>
+             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary news" href="#"><b>EVENTS</b></a>
+            <ul>
+              <li><a href="#" class="drop">Quidditch Tournament</a></li>
+              <li><a href="#" class="drop">Potions Contest</a></li>
+              <li><a href="#" class="drop">Inter House Quiz</a></li>
+              <li><a href="#" class="drop">Others...</a></li>
+         </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary parent" href="#"><b>RULES</b></a>
+            <ul>
+              <li><a href="#" class="drop">General</a></li>
+              <li><a href="#" class="drop">Dormitory Rules</a></li>
+              <li><a href="#" class="drop">Library Rules</a></li>
+              <li><a href="#" class="drop">Classroom Rules</a></li>
+              <li><a href="#" class="drop">Dress Code</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <!-- Sliding Images -->
@@ -146,28 +127,28 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/slider1.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider1.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider2.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider2.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider3.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider3.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider4.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider4.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider5.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider5.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider6.png" alt="pics" width=100% height="650">
+          <img src="img/slider6.png" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider7.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider7.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
         <div class="carousel-item">
-          <img src="img/slider8.jpg" alt="pics" width=100% height="650">
+          <img src="img/slider8.jpg" alt="pics" width=100% height="650" class="img-responsive">
         </div>
       </div>
 
@@ -181,7 +162,7 @@
     </div>
 
     <div style="background-image: url('img/background.jpg');">
-      <div class="container"><br>
+      <div class="container">
         <div class="row">
           <div class="col-md-4"><h3><u>ANNOUNCEMENTS</u></h3>
             </br>
@@ -198,7 +179,8 @@
                 <hr>
                 <b>Quarantine Break</b>
                 <br>
-                <i>April 21, 2020</i><br>
+                <i>April 21, 2020</i>
+                <br>
               </li>
               <li id="shr">
                 <hr>
@@ -211,230 +193,231 @@
             </ul>
           </div>
 
-          <div class="col-md-4"><h3><u>EVENTS</u></h3>
-            <span><strong>June 27th</strong></span>
-            <a href ="#"><h3>Quidditch Tournament</h3></a><br>
-            <span><strong>July 5th</strong></span>
-            <a href ="#"><h3>Mid Terms</h3></a><br>
-            <span><strong>September 13th</strong></span>
+          <div class="col-md-4">
+            <h3><u>EVENTS</u></h3>
+            <strong>June 27th</strong>
+            <a href ="#"><h3>Quidditch Tournament</h3></a>
+            <br>
+            <strong>July 5th</strong>
+            <a href ="#"><h3>Mid Terms</h3></a>
+            <br>
+            <strong>September 13th</strong>
             <a href ="#"><h3>Mid Term Break</h3></a>
+          </div>
+
+          </br>
+
+          <div class="col-md-4"><h3><u>OUR PRINCIPAL</u></h3>
+            <img src="img/dumbledore.jpg" alt="principal" width="80%" height="35%"><br>
+            </br>
+              <p><b>Albus Dumbledore</b> was the Headmaster of Hogwarts for close to forty years, a time
+                period that encompassed both of Voldemort’s attempts to take over the Wizarding world.
+                He is considered to be the most powerful wizard of his time.</p>
+          </div>
         </div>
-          </br>
 
-      <div class="col-md-4"><u><h3>OUR PRINCIPAL</h3></u>
-                </br>
-              </br>
-                  <img src="img/dumbledore.jpg" alt="principal" width="80%" height="35%"><br>
-          </br>
-                  <p id="shr"><b>Albus Dumbledore</b> was the Headmaster of Hogwarts for close to forty years, a time
-                    period that encompassed both of Voldemort’s attempts to take over the Wizarding world.
-                    He is considered to be the most powerful wizard of his time.</p>
-                  </br>
+        <div class="container-fluid text-white text-center">
+          <label>
+            <div class="col-lg-2">
+              <a href="#">
+                <img src="img/icon1.png" height="50px" width="50px" alt="books">
+  			        <h5>Books</h5>
+  		        </a>
+  	        </div>
+          </label>
+          <label>
+            <div class="col-lg-2">
+              <a href="#">
+                <img src="img/icon2.jpg" height="50px" width="50px" alt="robes">
+                <h5>Robes</h5>
+  		        </a>
+  	         </div>
+          </label>
+          <label>
+            <div class="col-lg-2">
+          		<a href="#">
+          			<img src="img/icon3.jpg" height="50px" width="50px" alt="wands">
+          			<h5>Wands</h5>
+          		</a>
+          	</div>
+        </label>
+        <label>
+          <div class="col-lg-2">
+        		<a href="#">
+        			<img src="img/icon4.png" height="50px" width="50px" alt="accesories">
+        			<h5>Accesories</h5>
+        		</a>
+        	</div>
+        </label>
+  	</div>
 
-            </div>
+    <!--Alumini-->
+    <div class="container">
+      <center class="pt-4">
+        <table>
+          <tr>
+            <td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo" width="50px" height="50px"></td>
+            <td><b><h2>FAMOUS ALUMINI</h2></b></td>
+            <td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo"width="50px" height="50px" ></td>
+          </tr>
+        </table>
+      </center>
+
+      <div class="row pt-4">
+        <div class="col-md-3">
+          <br>
+          <img src="img/harry.jpg" alt="harry" width="250px" height="140">
+          <h4 class="text-center pt-2"><b>Harry Potter</b></h4>
+          <p>Harry Potter is the Boy Who Lived, the Chosen One, the hero of the Wizarding world.
+            He grew up with Muggles, and then came to Hogwarts where he faced dangers and terrors beyond his years.
+            He, along with his friends destroyed Voldemort’s Horcruxes.
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <br>
+          <img src="img/hermione.jpg" alt="hermione" width="250px" height="140">
+          <h4 class="text-center pt-2"><b>Hermione Granger</b></h4>
+          <p>Hermione Jean Granger was the brightest witch of her generation.
+            She, along with Ron Weasley, is one of Harry Potter’s closest friends. She is also Muggle-born,
+            and so is a living, breathing example of the fallacy of pureblood wizard supremacy.
+          </p>
+        </div>
+
+      <div class="col-md-3">
+        <br>
+        <img src="img/sirius.jpg" alt="sirius" width="250px" height="140">
+        <h4 class="text-center pt-2"><b>Sirius Black</b></h4>
+        <p>Sirius Black was James Potter’s closest friend, Harry Potter’s godfather, and an
+          Animagus, who was falsely accused of betrayal and murder and imprisoned in Azkaban. Sirius was
+          killed by his cousin Bellatrix in the Battle of the Department of Mysteries.
+        </p>
       </div>
-      <br><br>
-        <div class="container-fluid text-white" >
-        <br><br>
-    <label>
-  	  <div class="col-lg-2">
-  		<a href="#">
-  			<img src="img/icon1.png" height="50px" width="50px" alt="">
-  			<p><h5>Books</h5></p>
-  		</a>
-  	  </div>
-    </label>
-    <label>
-        <div class="col-lg-2">
-  		<a href="#">
-  			<img src="img/icon2.jpg" height="50px" width="50px" alt="robes">
-  			<p><h5>Robes</h5></p>
-  		</a>
-  	  </div>
-    </label>
-    <label>
-    <div class="col-lg-2">
-  		<a href="#">
-  			<img src="img/icon3.jpg" height="50px" width="50px" alt="wands">
-  			<p><h5>Wands</h5></p>
-  		</a>
-  	</div>
-    </label>
-    <label>
-    <div class="col-lg-2">
-  		<a href="#">
-  			<img src="img/icon4.png" height="50px" width="50px" alt="accesories">
-  			<p><h5>Accesories</h5></p>
-  		</a>
-  	</div>
-    </label>
-  	</div>
 
-  <!--Alumini-->
-  <div class="container">
-  </br><br>
-  <center><table>  <tr>
-          <td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo" width="50px" height="50px"></td>
-          	<td><b><h2>FAMOUS ALUMINI</h2></b></td>
-          	<td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo"width="50px" height="50px" ></td>
-      </tr></table></center>
-  </br>
+      <div class="col-md-3">
+        <br>
+        <img src="img/snape.jpg" alt="snape" width="250px" height="140">
+        <h4 class="text-center pt-2"><b>Severus Snape</b></h4>
+        <p>Severus Snape was Potions Master, Defense Against the Dark Arts teacher, and
+          Head of Slytherin at Hogwarts School of Witchcraft and Wizardry; he succeeded Dumbledore as Headmaster.
+          He was personally killed by Lord Voldemort and his snake, Nagini.
+        </p>
+      </div>
 
-  <div class="row">
-  <div class="col-md-3">
-  </br>
-  <img src="img/harry.jpg" alt="harry" width="250px" height="140">
-  </br>
-  <p class="r"><b><h4>Harry Potter</h4></b></p>
-  <p class="ra">Harry Potter is the Boy Who Lived, the Chosen One, the hero of the Wizarding world.
-    He grew up with Muggles, and then came to Hogwarts where he faced dangers and terrors beyond his years.
-    He, along with his friends destroyed Voldemort’s Horcruxes.
-  </p>
-  </div>
+    <!--Houses-->
+    <div class="container pt-4">
+      <center>
+        <table>
+          <tr>
+            <td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo" width="50px" height="50px"></td>
+            <td><h2><b>THE FOUR HOUSES</b></h2></td>
+            <td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo"width="50px" height="50px" ></td>
+          </tr>
+        </table>
+      </center>
+      </br>
+      <div class="row pb-4">
+          <div class="col-md-3">
+            <br>
+            <img src="img/griffindor.jpg" alt="gryffindor" width="200px" height="200px">
+            <h4 class="text-center pt-2"><b>Gryffindor</b></h4>
+            <p>Founded by Godric Gryffindor, Gryffindors are students possessing characteristics he most
+              valued, such as courage, chivalry, and determination, to be sorted into his house.
+            </p>
+          </div>
 
-  <div class="col-md-3">
-  </br>
-  <img src="img/hermione.jpg" alt="hermione" width="250px" height="140">
-  </br>
-  <p class="r"><h4><b>Hermione Granger</b></h4></p>
-  <p class="ra">Hermione Jean Granger was the brightest witch of her generation.
-    She, along with Ron Weasley, is one of Harry Potter’s closest friends. She is also Muggle-born,
-    and so is a living, breathing example of the fallacy of pureblood wizard supremacy.
-  </p>
-  </div>
+        <div class="col-md-3">
+          <br>
+          <img src="img/hufflepuff.png" alt="hufflepuff" width="200px" height="200px">
+          <h4 class="text-center pt-2"><b>Hufflepuff</b></h4>
+          <p>Founded by the medieval witch Helga Hufflepuff, Hufflepuff is the most inclusive
+            among the four houses; valuing hard work, dedication, patience, loyalty, and fair play rather than a
+            particular aptitude in its members.
+          </p>
+        </div>
 
-  <div class="col-md-3">
-  </br>
-  <img src="img/sirius.jpg" alt="sirius" width="250px" height="140">
-  </br>
-  <p class="r"><h4><b>Sirius Black</b></h4></p>
-  <p class="ra">Sirius Black was James Potter’s closest friend, Harry Potter’s godfather, and an
-    Animagus, who was falsely accused of betrayal and murder and imprisoned in Azkaban. Sirius was
-    killed by his cousin Bellatrix in the Battle of the Department of Mysteries.
-  </p>
-  </div>
+        <div class="col-md-3">
+          <br>
+          <img src="img/ravenclaw.png" alt="ravenclaw" width="200px" height="200px">
+          <h4 class="text-center pt-2"><b>Ravenclaw</b></h4>
+          <p>Founded by Rowena Ravenclaw, the members of this house are characterised by their wit, learning, intellect,
+            and wisdom. Thus, most Ravenclaws tend to be academically motivated and talented students.
+          </p>
+        </div>
 
-  <div class="col-md-3">
-  </br>
-  <img src="img/snape.jpg" alt="snape" width="250px" height="140">
-  </br>
-  <p class="r"><h4><b>Severus Snape</b></h4></p>
-  <p class="ra">Severus Snape was Potions Master, Defense Against the Dark Arts teacher, and
-    Head of Slytherin at Hogwarts School of Witchcraft and Wizardry; he succeeded Dumbledore as Headmaster.
-    He was personally killed by Lord Voldemort and his snake, Nagini.
-  </p>
-  </div>
+        <div class="col-md-3">
+          <br>
+          <img src="img/slytherin.png" alt="slytherin" width="200px" height="200px">
+          <h4 class="text-center pt-2"><b>Slytherin</b></h4>
+          <p>Founded by Salazar Slytherin, Slytherins are known for being cunning and ambitious,
+            although it is also known to have produced many Dark witches and wizards.
+          </p>
+        </div>
+      </div>
+    </div>
 
-  <!--Houses-->
-  <div class="container">
-  </br><br>
-      <center><table>  <tr>
-          <td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo" width="50px" height="50px"></td>
-          	<td><b><h2>THE FOUR HOUSES</h2></b></td>
-          	<td><img src="img/hog.png" class="img-responsive" alt="hogwarts-logo"width="50px" height="50px" ></td>
-      </tr></table></center>
-  </br>
-  <div class="row">
-  <div class="col-md-3">
-  </br>
-  <img src="img/griffindor.jpg" alt="gryffindor" width="200px" height="200px">
-  </br>
-  <p class="r"><b><h4>Gryffindor</h4></b></p>
-  <p class="ra">Founded by Godric Gryffindor, Gryffindors are students possessing characteristics he most
-    valued, such as courage, chivalry, and determination, to be sorted into his house.
-  </p>
-  </div>
+    <div class="container-fluid text-white">
+      <div class="row text-center">
+          <div class="col-md-3">
+            <h5><b>ABOUT US</b></h5>
+            <br>
+          	<p>History<p>
+          	<p>Four Founders<p>
+          	<p>The Battles</p>
+          	<p>Renovation</p>
+            <p>Voldemort Era</p>
+          	<p>Harry Potter Era</p>
+          	<p>The New Campus</p>
+          </div>
+          <div class="col-md-3">
+            <h5><b>INFRASTRUCTURE</b></h5>
+            <br>
+          	<p>Dormitories</p>
+        		<p>The Great Hall</p>
+        		<p>Hospital Wing</p>
+        		<p>Library</p>
+        		<p>Canteens</p>
+        		<p>Laboratories</p>
+        		<p>Quidditch Ground</p>
+          </div>
+          <div class="col-md-3">
+    	     <h5><b>ACADEMICS</b></h5>
+           <br>
+    		   <p>School Timings</p>
+      		 <p>School Uniform</p>
+      		 <p>Rules & Regulations</p>
+      		 <p>Subjects</p>
+      		 <p>Faculty</p>
+      	   <p>School Calendar</p>
+      		 <p>Fee Structure</p>
+          </div>
+          <div class="col-md-3">
+    	      <h5><b>CO-CURRICULARS</b></h5>
+            <br>
+        		<p>Quidditch Tournament</p>
+        		<p>Inter House Quiz</p>
+        		<p>Sports Meet</p>
+        		<p>Yule Ball</p>
+        		<p>TriWizard Tournament</p>
+        		<p>Art & Craft Exhibition</p>
+        		<p>Others</p>
+          </div>
+        </div>
 
-  <div class="col-md-3">
-  </br>
-  <img src="img/hufflepuff.jpg" alt="hufflepuff" width="200px" height="200px">
-  </br>
-  <p class="r"><h4><b>Hufflepuff</b></h4></p>
-  <p class="ra">Founded by the medieval witch Helga Hufflepuff, Hufflepuff is the most inclusive
-    among the four houses; valuing hard work, dedication, patience, loyalty, and fair play rather than a
-    particular aptitude in its members.
-  </p>
-  </div>
+      <!--Footer-->
+      <footer class="page-footer bg-dark">
+        <div class="footer-copyright text-center py-3 font-weight-bold">
+          Hogwarts School of Witchcraft and Wizadry
+        </div>
+      </footer>
 
-  <div class="col-md-3">
-  </br>
-  <img src="img/ravenclaw.jpg" alt="ravenclaw" width="200px" height="200px">
-  </br>
-  <p class="r"><h4><b>Ravenclaw</b></h4></p>
-  <p class="ra">Founded by Rowena Ravenclaw, the members of this house are characterised by their wit, learning, intellect,
-    and wisdom. Thus, most Ravenclaws tend to be academically motivated and talented students.
-  </p>
-  </div>
+    </div>
 
-  <div class="col-md-3">
-  </br>
-  <img src="img/slytherin.png" alt="slytherin" width="200px" height="200px">
-  </br>
-  <p class="r"><h4><b>Slytherin</b></h4></p>
-  <p class="ra">Founded by Salazar Slytherin, Slytherins are known for being cunning and ambitious,
-    although it is also known to have produced many Dark witches and wizards.
-  </p>
-  </div>
-
-  <div class="container-fluid text-white">
-  <div class="row">
-  <div class="col-md-3">
-  <b>ABOUT US</b>
-  <br>
-  	<p class="ra">History<br>
-  		Four Founders<br>
-  		The Battles<br>
-  		Renovation<br>
-  		Voldemort Era<br>
-  		Harry Potter Era<br>
-  		The New Campus<br></p>
-  </div>
-  <div class="col-md-3">
-  <b>INFRASTRUCTURE</b>
-  	<p class="ra">Dormitories<br>
-  		The Great Hall<br>
-  		Hospital Wing<br>
-  		Library<br>
-  		Canteens<br>
-  		Laboratories<br>
-  		Quidditch Ground<br></p>
-  </div>
-  <div class="col-md-3">
-  	<b>ACADEMICS</b>
-  		<p class="ra">School Timings<br>
-  		School Uniform<br>
-  		Rules & Regulations<br>
-  		Subjects<br>
-  		Faculty<br>
-  		School Calendar<br>
-  		Fee Structure<br>
-  </div>
-  <div class="col-md-3">
-  	<b>CO-CURRICULARS</b>
-  		<p class="ra">Quidditch Tournament<br>
-  		Inter House Quiz<br>
-  		Sports Meet<br>
-  		Yule Ball<br>
-  		TriWizard Tournament<br>
-  		Art & Craft Exhibition<br>
-  		Others<br></p>
-  </div>
-  </div>
-
-  <!--Footer-->
-  <nav class="nav navbar navbar-expand-sm py-0  navbar-dark bg-dark">
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav mr-auto ">
-          <li class="nav-item active">
-              <a class="nav-link" ><h6 style="color: lightgrey">Hogwarts School of Witchcraft and Wizadry</h6></a>
-          </li>
-      </ul></div>
-  	</nav>
-
-  </div>
-
-   	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    </body>
- </html>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

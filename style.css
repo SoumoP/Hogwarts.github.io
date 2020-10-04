@@ -1,5 +1,6 @@
 body{
 	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
 }
 
 #school-name{
@@ -67,7 +68,7 @@ ul ul li a.ho:hover {
 }
 
 .drop{
-    color: aqu;
+    color: aqua;
 }
 
 .navbar{
